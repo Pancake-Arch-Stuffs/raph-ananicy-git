@@ -1,9 +1,9 @@
-pkgbase = ananicy-git
+pkgbase = raph-ananicy-git
 	pkgdesc = Ananicy - is Another auto nice daemon, with community rules support
 	pkgver = 2.1.0.r12.g38eb477
 	pkgrel = 1
-	url = https://github.com/Nefelim4ag/Ananicy.git
-	install = ananicy-git.install
+	url = https://github.com/raphielscape/Ananicy.git
+	install = raph-ananicy-git.install
 	arch = any
 	license = GPL3
 	makedepends = git
@@ -11,9 +11,10 @@ pkgbase = ananicy-git
 	depends = systemd
 	depends = bash
 	depends = schedtool
+	depends = python
 	backup = etc/ananicy.d/ananicy.conf
-	source = ananicy-git::git+https://github.com/Nefelim4ag/Ananicy.git#branch=master
+	source = raph-ananicy-git::git+https://github.com/raphielscape/Ananicy.git#branch=master
 	md5sums = SKIP
 
-pkgname = ananicy-git
+pkgname = raph-ananicy-git
 

@@ -1,15 +1,16 @@
-# Maintainer: Timofey Titovets <nefelim4ag@gmail.com>
+# Maintainer: Raphiel Rollerscaperers <raphielscape@raphielgang.org>
+# Based on PKGBUILD from: Timofey Titovets <nefelim4ag@gmail.com>
 
-pkgname=ananicy-git
-pkgver=2.1.0.r12.g38eb477
+pkgname=raph-ananicy-git
+pkgver=2.11.r0.g2d474a9
 pkgrel=1
 pkgdesc="Ananicy - is Another auto nice daemon, with community rules support"
 arch=('any')
-url="https://github.com/Nefelim4ag/Ananicy.git"
+url="https://github.com/raphielscape/Ananicy.git"
 license=('GPL3')
-depends=('systemd' 'bash' 'schedtool')
+depends=('systemd' 'bash' 'schedtool' 'python')
 makedepends=('git' 'make')
-source=("$pkgname"::'git+https://github.com/Nefelim4ag/Ananicy.git#branch=master')
+source=("$pkgname"::'git+https://github.com/raphielscape/Ananicy.git#branch=master')
 md5sums=('SKIP')
 install=$pkgname.install
 backup=( 'etc/ananicy.d/ananicy.conf' )
